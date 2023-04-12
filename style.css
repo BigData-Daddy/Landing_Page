@@ -1,0 +1,86 @@
+:root {
+    --clr-primary-darkblue: #1F2937;
+    --clr-primary-gray: #E5E7EB;
+    --clr-secondary-Text: #E5E7EB;
+    --clr-primary-text: #F9FAF8;
+    --clr-primary-button: #3882F6;
+    --clr-secondary-white: #ffffff;
+    
+
+}
+
+body {
+    background: black;
+    margin: 0px;
+}
+.header {
+    
+    background: var(--clr-primary-darkblue);
+    color: var(--clr-primary-text);
+    height: 25vh;
+    width: 100vw;
+    margin: 0px;
+    
+}
+/* adding padding here removes the gap the list creates 
+please leave this padding  */
+.header-nav {
+    padding: 1px;
+}
+.content-box1 {
+    background: var(--clr-secondary-white);
+    height: 25vh;
+    width: 100vw;
+    display: flex;
+    /* Y axis center */
+    align-items: center;
+    /* X axis center */
+    justify-content: center;
+    flex-direction: column;
+}
+
+.content-box2 {
+    background:  var(--clr-primary-gray);
+    height: 20vh;
+    width: 100vw;
+    display:flex;
+    /* Y axis center */
+    align-items: center;
+    /* X axis center */
+    justify-content: center;
+    flex-direction: column;
+}
+.content-box2-content {
+    
+    display: inline-block;
+    /* Y axis center */
+    justify-content: center;
+     /* X axis center */
+    align-items: center;
+    height: 30%;
+    width: 60%;
+    font-size: 36px;
+    font-family: light italic;
+        
+}
+.content-box2-quote-name {
+    
+    display: inline-block;
+    
+    
+    
+
+
+}
+.content-box3 {
+    background: var(--clr-secondary-white);
+    height: 20vh;
+    width: 100vw;
+}
+.footer {
+    background: var(--clr-primary-darkblue);
+    color: var(--clr-primary-text);
+    height: 10vh;
+    width: 100vw;
+
+}
