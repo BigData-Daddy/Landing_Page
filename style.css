@@ -1,3 +1,4 @@
+
 :root {
     --clr-primary-darkblue: #1F2937;
     --clr-primary-gray: #E5E7EB;
@@ -12,75 +13,82 @@
 body {
     background: black;
     margin: 0px;
+    margin: 0 auto;
 }
+
+/* first block starts here  */
 .header {
-    
+    position: relative;
     background: var(--clr-primary-darkblue);
     color: var(--clr-primary-text);
-    height: 25vh;
-    width: 100vw;
-    margin: 0px;
-    
+    padding: 10em 20em;
+    width: 100%;
 }
-/* adding padding here removes the gap the list creates 
-please leave this padding  */
+
+.header-logo {
+    position: absolute;
+    color: var(--clr-secondary-white);
+    font-size: 24px;
+    top: .4rem;
+    left: 8.5rem;
+    font-size: 1rem;
+
+
+
+}
+
 .header-nav {
-    padding: 1px;
-}
-.content-box1 {
-    background: var(--clr-secondary-white);
-    height: 25vh;
-    width: 100vw;
-    display: flex;
-    /* Y axis center */
-    align-items: center;
-    /* X axis center */
-    justify-content: center;
-    flex-direction: column;
+position: absolute;
+display: flex;
+flex-direction: row;
+top: .5rem;
+right: 4rem;
+left: 30.5rem;
+font-size: .8rem;
+white-space: nowrap;
 }
 
-.content-box2 {
-    background:  var(--clr-primary-gray);
-    height: 20vh;
-    width: 100vw;
-    display:flex;
-    /* Y axis center */
-    align-items: center;
-    /* X axis center */
-    justify-content: center;
-    flex-direction: column;
+.header-nav ul {
+    top: 1rem;
+    margin:0;
+    padding:0;
 }
-.content-box2-content {
+
+.header-nav li {
     
+    margin-inline: .5rem;
     display: inline-block;
-    /* Y axis center */
-    justify-content: center;
-     /* X axis center */
-    align-items: center;
-    height: 30%;
-    width: 60%;
-    font-size: 36px;
-    font-family: light italic;
-        
 }
-.content-box2-quote-name {
-    
-    display: inline-block;
-    
-    
-    
+
+.header-main-message {
+position: absolute;
+top: 6.5rem;
+left: 8.5rem;
+font-size: 2rem;
+word-break: break-word;
+width: 15rem;
 
 
 }
-.content-box3 {
-    background: var(--clr-secondary-white);
-    height: 20vh;
-    width: 100vw;
+.header-sub-message {
+    position: absolute;
+    top: 11rem;
+    left: 8.5rem;
+    font-size: .8rem;
+    word-break: break-word;
+    width: 18rem;
 }
-.footer {
-    background: var(--clr-primary-darkblue);
-    color: var(--clr-primary-text);
-    height: 10vh;
-    width: 100vw;
+
+.header-button {
+    position: absolute;
+    color: #E5E7EB;
+    top: 14.2rem;
+    left: 8.5rem;
+    background-color: var(--clr-primary-button);
+    border-radius: .3rem;
+    border: none;
+    padding: 0;
+    width: 5rem;
+    height: 1.5rem;
 
 }
