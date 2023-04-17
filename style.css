@@ -13,82 +13,101 @@
 body {
     background: black;
     margin: 0px;
-    margin: 0 auto;
+    margin: 0;
 }
 
-/* first block starts here  */
-.header {
-    position: relative;
-    background: var(--clr-primary-darkblue);
-    color: var(--clr-primary-text);
-    padding: 10em 20em;
-    width: 100%;
+/* Font Elements */
+h1{
+font: extra-bold;
+font-size: 48px;
+}
+
+.p {
+font-size: 18px;
+
+}
+
+
+
+
+/* container css */
+.container {
+display: flex;
+height: 100vh;
+flex-direction: column;
+}
+
+
+
+
+
+
+/* all css for the nav bar goes here */
+.header-nav {
+    position: sticky;
+    top: 0rem;
+    padding: 0rem;
+    display: flex;
+    background-color: var(--clr-primary-darkblue);
+    align-items: center;
+    z-index: 10;
 }
 
 .header-logo {
-    position: absolute;
+    display: block;
+    width: 15rem;
+    padding-left: 8.5rem;
+    margin-right: auto;
     color: var(--clr-secondary-white);
-    font-size: 24px;
-    top: .4rem;
-    left: 8.5rem;
-    font-size: 1rem;
-
-
-
 }
 
-.header-nav {
-position: absolute;
-display: flex;
-flex-direction: row;
-top: .5rem;
-right: 4rem;
-left: 30.5rem;
-font-size: .8rem;
-white-space: nowrap;
+.header-link {
+    margin-right: 2rem;
+    display: flex;
+    margin-left: auto;
+    color: var(--clr-secondary-white);
+    column-gap: 2rem;
 }
 
-.header-nav ul {
-    top: 1rem;
-    margin:0;
-    padding:0;
-}
 
-.header-nav li {
+
+
+
+/* this is the content block below the nav bar */
+.header {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    background: var(--clr-primary-darkblue);
+    color: var(--clr-primary-text);
+    padding: 10rem;
     
-    margin-inline: .5rem;
-    display: inline-block;
 }
 
-.header-main-message {
-position: absolute;
-top: 6.5rem;
-left: 8.5rem;
-font-size: 2rem;
-word-break: break-word;
-width: 15rem;
-
-
+.header-textbox {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 30rem;
+    margin-right: 3rem;
 }
-.header-sub-message {
-    position: absolute;
-    top: 11rem;
-    left: 8.5rem;
-    font-size: .8rem;
-    word-break: break-word;
-    width: 18rem;
+
+.catimage img {
+    display: flex;
+    flex: 1;
+    width: 500px;
+    height: 350px;
+    object-fit: cover;
 }
 
 .header-button {
-    position: absolute;
+    position: flex;
     color: #E5E7EB;
-    top: 14.2rem;
-    left: 8.5rem;
     background-color: var(--clr-primary-button);
     border-radius: .3rem;
     border: none;
     padding: 0;
     width: 5rem;
     height: 1.5rem;
-
 }
+/* end of content below the nav bar */
